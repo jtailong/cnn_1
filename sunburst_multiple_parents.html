@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+    
+</head>
+<body >
+    <div id="c00bbd40e6ca4f698169eb1ab78a6d2b" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+        var chart_c00bbd40e6ca4f698169eb1ab78a6d2b = echarts.init(
+            document.getElementById('c00bbd40e6ca4f698169eb1ab78a6d2b'), 'white', {renderer: 'canvas'});
+        var option_c00bbd40e6ca4f698169eb1ab78a6d2b = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "sunburst",
+            "name": "\u5c42\u7ea7\u7ed3\u6784",
+            "data": [
+                {
+                    "name": "\u7236\u8282\u70b9 A",
+                    "value": 10,
+                    "children": [
+                        {
+                            "name": "\u5b50\u8282\u70b9 A1",
+                            "value": 5
+                        },
+                        {
+                            "name": "\u5b50\u8282\u70b9 A2",
+                            "value": 5
+                        }
+                    ]
+                },
+                {
+                    "name": "\u7236\u8282\u70b9 B",
+                    "value": 15,
+                    "children": [
+                        {
+                            "name": "\u5b50\u8282\u70b9 B1",
+                            "value": 8
+                        },
+                        {
+                            "name": "\u5b50\u8282\u70b9 B2",
+                            "value": 7
+                        }
+                    ]
+                },
+                {
+                    "name": "\u7236\u8282\u70b9 C",
+                    "value": 20,
+                    "children": [
+                        {
+                            "name": "\u5b50\u8282\u70b9 C1",
+                            "value": 10
+                        },
+                        {
+                            "name": "\u5b50\u8282\u70b9 C2",
+                            "value": 10
+                        }
+                    ]
+                }
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "radius": [
+                "0%",
+                "75%"
+            ],
+            "highlightPolicy": "descendant",
+            "nodeClick": "rootToNode",
+            "sort": "desc",
+            "renderLabelForZeroData": false,
+            "clockwise": true,
+            "startAngle": 90,
+            "label": {
+                "show": true,
+                "margin": 8,
+                "valueAnimation": false
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [],
+            "selected": {}
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    }
+};
+        chart_c00bbd40e6ca4f698169eb1ab78a6d2b.setOption(option_c00bbd40e6ca4f698169eb1ab78a6d2b);
+    </script>
+</body>
+</html>

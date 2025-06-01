@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+    
+</head>
+<body >
+    <div id="ab444178c8824742b6a6f4c609d34a5c" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+        var chart_ab444178c8824742b6a6f4c609d34a5c = echarts.init(
+            document.getElementById('ab444178c8824742b6a6f4c609d34a5c'), 'white', {renderer: 'canvas'});
+        var option_ab444178c8824742b6a6f4c609d34a5c = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "sunburst",
+            "name": "\u5c42\u7ea7\u7ed3\u6784",
+            "data": [
+                {
+                    "name": "\u6839\u8282\u70b9",
+                    "value": 10,
+                    "children": [
+                        {
+                            "name": "\u5b50\u8282\u70b9 1",
+                            "value": 5,
+                            "children": [
+                                {
+                                    "name": "\u5b50\u8282\u70b9 1.1",
+                                    "value": 2
+                                },
+                                {
+                                    "name": "\u5b50\u8282\u70b9 1.2",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "name": "\u5b50\u8282\u70b9 2",
+                            "value": 5,
+                            "children": [
+                                {
+                                    "name": "\u5b50\u8282\u70b9 2.1",
+                                    "value": 2
+                                },
+                                {
+                                    "name": "\u5b50\u8282\u70b9 2.2",
+                                    "value": 3
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "radius": [
+                "0%",
+                "75%"
+            ],
+            "highlightPolicy": "descendant",
+            "nodeClick": "rootToNode",
+            "sort": "desc",
+            "renderLabelForZeroData": false,
+            "clockwise": true,
+            "startAngle": 90,
+            "label": {
+                "show": true,
+                "margin": 8,
+                "valueAnimation": false
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [],
+            "selected": {}
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    }
+};
+        chart_ab444178c8824742b6a6f4c609d34a5c.setOption(option_ab444178c8824742b6a6f4c609d34a5c);
+    </script>
+</body>
+</html>

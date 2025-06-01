@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
                 <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/world.js"></script>
 
     
 </head>
 <body >
-    <div id="3aee673ecf8c41bb92f7b3cd3ccf5702" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="5f3fb4aad2334c489133138456e52a83" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_3aee673ecf8c41bb92f7b3cd3ccf5702 = echarts.init(
-            document.getElementById('3aee673ecf8c41bb92f7b3cd3ccf5702'), 'white', {renderer: 'canvas'});
-        var option_3aee673ecf8c41bb92f7b3cd3ccf5702 = {
+        var chart_5f3fb4aad2334c489133138456e52a83 = echarts.init(
+            document.getElementById('5f3fb4aad2334c489133138456e52a83'), 'white', {renderer: 'canvas'});
+        var option_5f3fb4aad2334c489133138456e52a83 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -38,51 +37,41 @@
     ],
     "series": [
         {
-            "type": "map",
-            "name": "\u4e9a\u592a\u5730\u533a",
-            "label": {
-                "show": true,
-                "color": "#000",
-                "margin": 8,
-                "fontSize": 14,
-                "formatter": "{b}",
-                "valueAnimation": false
-            },
-            "map": "world",
+            "type": "bar",
+            "name": "GDP",
+            "legendHoverLink": true,
             "data": [
-                {
-                    "name": "\u4e2d\u56fd",
-                    "value": 1
-                },
-                {
-                    "name": "\u53f0\u6e7e",
-                    "value": 1
-                }
+                5,
+                2,
+                1,
+                0.2,
+                1
             ],
-            "roam": true,
-            "aspectScale": 0.75,
-            "nameProperty": "name",
-            "selectedMode": false,
-            "zoom": 1,
-            "zlevel": 0,
-            "z": 2,
+            "realtimeSort": false,
+            "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
             "seriesLayoutBy": "column",
             "datasetIndex": 0,
-            "mapValueCalculation": "sum",
-            "showLegendSymbol": false,
-            "emphasis": {},
-            "rippleEffect": {
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
                 "show": true,
-                "brushType": "stroke",
-                "scale": 2.5,
-                "period": 4
+                "margin": 8,
+                "valueAnimation": false
             }
         }
     ],
     "legend": [
         {
             "data": [
-                "\u4e9a\u592a\u5730\u533a"
+                "GDP"
             ],
             "selected": {},
             "show": true,
@@ -128,10 +117,79 @@
         "padding": 5,
         "order": "seriesAsc"
     },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0,
+            "data": [
+                "China",
+                "American",
+                "Taiwan",
+                "Japan",
+                "Canada"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0
+        }
+    ],
     "title": [
         {
             "show": true,
-            "text": "\u4e9a\u592a\u533a\u57df\u5730\u56fe - \u5927\u9646\u4e0e\u53f0\u6e7e\u6807\u6ce8",
+            "text": "GDP\u5bf9\u6bd4",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
@@ -202,32 +260,9 @@
                 "icon": {}
             }
         }
-    },
-    "visualMap": {
-        "show": false,
-        "type": "continuous",
-        "min": 0,
-        "max": 100,
-        "inRange": {
-            "color": [
-                "#50a3ba",
-                "#eac763",
-                "#d94e5d"
-            ]
-        },
-        "calculable": true,
-        "inverse": false,
-        "splitNumber": 5,
-        "hoverLink": true,
-        "orient": "vertical",
-        "padding": 5,
-        "showLabel": true,
-        "itemWidth": 20,
-        "itemHeight": 140,
-        "borderWidth": 0
     }
 };
-        chart_3aee673ecf8c41bb92f7b3cd3ccf5702.setOption(option_3aee673ecf8c41bb92f7b3cd3ccf5702);
+        chart_5f3fb4aad2334c489133138456e52a83.setOption(option_5f3fb4aad2334c489133138456e52a83);
     </script>
 </body>
 </html>
